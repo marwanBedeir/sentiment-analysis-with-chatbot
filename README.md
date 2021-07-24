@@ -13,6 +13,7 @@ This program is a simple chatbot ask the customer for if he has a complain or as
 First of all you must have python 3.# and git
 
 link for python: https://opensource.com/article/20/4/install-python-linux
+
 link for git: https://www.atlassian.com/git/tutorials/install-git
 
 After installing python and git (make sure pip is installed):
