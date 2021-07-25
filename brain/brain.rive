@@ -1,13 +1,13 @@
 ! version= 2.0
 ! local concat = space
 
-! question = asking
-! ask = asking
-! to know = asking
-! complains = complain
-! problem = complain
-! problems = complain
-! thank = thanks
+! sub question = asking
+! sub ask = asking
+! sub to know = asking
+! sub complains = complain
+! sub problem = complain
+! sub problems = complain
+! sub thank = thanks
 
 
 > begin
@@ -80,6 +80,12 @@
 
 + * thanks *
 @thanks
+
++ *
+- <call>create_answer
+^welcome
+^Complain=complain!Asking=asking // All available services till now
+^</call>
 < topic
 
 > topic complain
@@ -102,6 +108,7 @@
 + *
 - <call>add_review
 ^<star1>
+^<id>
 ^</call> {topic=welcome}
 < topic
 
@@ -121,5 +128,5 @@
 
 > object add_review python
   import help_functions
-  return help_functions.add_review(args[0])
+  return help_functions.add_review(args[1], args[0])
 < object

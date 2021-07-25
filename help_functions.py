@@ -1,4 +1,11 @@
 import random
+import pandas as pd
+import sentmint_analysis
+
+
+def model(text):
+    return sentmint_analysis.LR(text), sentmint_analysis.DT(text)
+
 
 answers = {
     "welcome":
@@ -55,5 +62,16 @@ def create_answer(text_key, buttons):
     return my_json
 
 
-def add_review(text):
-    print(text, "mmb")
+file_path = "costumer_review.csv"
+
+
+def add_review(user_id, text):
+    lr, dt = model(text)
+    res_df = {'user_id': user_id, 'text': text, 'Linear_regression_review': lr, 'Decision_tree_review': dt}
+    try:
+        df = pd.read_csv(file_path)
+        df = df.append(res_df, ignore_index=True)
+    except:
+        df = pd.DataFrame({'user_id': [user_id], 'text': [text], 'Linear_regression_review': [lr], 'Decision_tree_review': [dt]})
+        print("file created")
+    df.to_csv(file_path)
