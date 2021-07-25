@@ -33,7 +33,7 @@ Then write:
 Congratulation you can now chat with the chatbot in terminal.
 
 
-# How to start with GUI for Linux
+## How to start with GUI for Linux
  First of all you must have python 3.# and git
 
 link for python: https://opensource.com/article/20/4/install-python-linux
