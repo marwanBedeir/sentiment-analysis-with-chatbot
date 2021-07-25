@@ -31,27 +31,3 @@ Then write:
 ```python main.py```
 
 Congratulation you can now chat with the chatbot in terminal.
-
-
-## How to start with GUI for Linux
- First of all you must have python 3.# and git
-
-link for python: https://opensource.com/article/20/4/install-python-linux
-
-link for git: https://www.atlassian.com/git/tutorials/install-git
-
-After installing python and git (make sure pip is installed):
-
-Open any empty folder in ur pc and write:
-
-```git clone https://github.com/marwanBedeir/sentiment-analysis-with-chatbot.git```
-
-Open your terminal and write:
-
-```pip install -r requirments.txt```
-
-Then write:
-
-```python app.py```
-
-
