@@ -8,7 +8,7 @@ Communicating with customers through live chat interfaces is widely used these d
 
 This program is a simple chatbot ask the customer for if he has a complain or asking about something. After that the chatbot asks the user to write a small review. Finally, this review is passed to a sentiment analysis model and write the result in "review.csv". 
 
-## How to start for Linux
+## How to start in terminal for Linux
 
 First of all you must have python 3.# and git
 
@@ -33,4 +33,25 @@ Then write:
 Congratulation you can now chat with the chatbot in terminal.
 
 
- 
+# How to start with GUI for Linux
+ First of all you must have python 3.# and git
+
+link for python: https://opensource.com/article/20/4/install-python-linux
+
+link for git: https://www.atlassian.com/git/tutorials/install-git
+
+After installing python and git (make sure pip is installed):
+
+Open any empty folder in ur pc and write:
+
+```git clone https://github.com/marwanBedeir/sentiment-analysis-with-chatbot.git```
+
+Open your terminal and write:
+
+```pip install -r requirments.txt```
+
+Then write:
+
+```python app.py```
+
+
